@@ -1,0 +1,13 @@
+<a class="button" style="margin-top: 10px" (click)="loadPostsJPH()" href="javascript:void(0)">CALL REST API JSONPLACEHOLDER</a>
+
+<a class="button" style="margin: 10px 0 0 10px" (click)="loadPostsDummy()" href="javascript:void(0)">CALL REST API DUMMYAPI</a>
+
+<a class="button" style="margin: 10px 0 0 10px" (click)="createPost()" href="javascript:void(0)">CREATE POST</a>
+
+<a class="button" style="margin: 10px 0 0 10px" (click)="deletePost()" href="javascript:void(0)">DELETE POST</a>
+
+<div *ngFor="let post of posts">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+  <hr />
+</div>

@@ -11,6 +11,7 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { CartComponent } from "./cart/cart.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ShippingComponent } from "./shipping/shipping.component";
+import { RestApiComponent } from "./rest-api/rest-api.component";
 
 @NgModule({
   imports: [
@@ -21,10 +22,11 @@ import { ShippingComponent } from "./shipping/shipping.component";
       { path: "", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
+      { path: "restapi", component: RestApiComponent },
       { path: "shipping", component: ShippingComponent },
     ]),
   ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent],
+  declarations: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent, ShippingComponent, RestApiComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
